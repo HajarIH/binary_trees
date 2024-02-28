@@ -4,7 +4,7 @@
 
 /* Our own functions */
 void binary_tree_print(const binary_tree_t *tree);
-void _binary_tree_delete(binary_tree_t *tree);
+void binary_tree_delete(binary_tree_t *tree);
 
 /**
  *  * main - Entry point
@@ -25,6 +25,6 @@ int main(void)
 			    printf("Left:%p\n", (void *)(root->left));
 			        printf("Right:%p\n", (void *)(root->right));
 				    binary_tree_print(root);
-				        _binary_tree_delete(root);
+				        binary_tree_delete(root);
 					    return (0);
 }
